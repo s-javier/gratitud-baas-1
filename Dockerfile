@@ -11,8 +11,8 @@ ADD https://github.com/pocketbase/pocketbase/releases/download/v${PB_VERSION}/po
 RUN unzip /tmp/pb.zip -d /pb/
 
 WORKDIR /pb
-COPY pb_hooks ./pb_hooks
-COPY pb_migrations ./pb_migrations
+# COPY pb_hooks ./pb_hooks
+# COPY pb_migrations ./pb_migrations
 
 EXPOSE 8080
 
